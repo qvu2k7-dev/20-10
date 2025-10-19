@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thư Chúc Mừng Ngày Phụ Nữ Việt Nam</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap");
+      .vanta-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      .letter-container {
+        background: rgba(0, 0, 0, 0.85);
+      }
+      .envelope {
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .envelope:hover {
+        transform: translateY(-10px) scale(1.02);
+      }
+      .petal {
+        position: absolute;
+        animation: float 8s infinite ease-in-out;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(180deg);
+        }
+      }
+      .glow-text {
+        text-shadow: 0 0 10px #ec4899, 0 0 20px #ec4899, 0 0 30px #ec4899;
+      }
+      .cursive {
+        font-family: "Dancing Script", cursive;
+      }
+      .serif {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-black text-white overflow-x-hidden">
+    <div id="vanta-bg" class="vanta-bg"></div>
+
+    <!-- Floating Petals -->
+    <div class="fixed inset-0 pointer-events-none">
+      <div class="petal top-10 left-10 text-pink-300 opacity-60">🌸</div>
+      <div class="petal top-20 right-20 text-pink-200 opacity-70">💮</div>
+      <div class="petal bottom-20 left-20 text-rose-300 opacity-50">🌺</div>
+      <div class="petal bottom-10 right-10 text-rose-200 opacity-80">🌷</div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 relative z-10">
+      <!-- Header -->
+      <header class="text-center mb-12 pt-8">
+        <h1 class="text-5xl md:text-7xl font-bold cursive glow-text mb-4">
+          20/10
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 serif">
+          Ngày Phụ Nữ Việt Nam
+        </p>
+        
+        </a>
+      </header>
+
+      <!-- Main Letter -->
+      <main class="max-w-4xl mx-auto">
+        <div
+          class="letter-container rounded-2xl p-8 md:p-12 border border-gray-800 shadow-2xl backdrop-blur-sm"
+        >
+          <!-- Envelope -->
+          <div class="envelope mb-12 text-center">
+              <i
+                data-feather="mail"
+                class="w-24 h-24 text-pink-500 mx-auto"
+              ></i>
+              <div
+                class="absolute -top-2 -right-2 w-6 h-6 bg-pink-500 rounded-full animate-ping"
+              ></div>
+            </div>
+
+            <iframe src="index2.html" width="100%" height="500px"></iframe>
+
+            <p
+              class="mt-4 text-gray-400 hover:text-pink-400 transition duration-300"
+            ></p>
+          </div>
+
+          <!-- Letter Content -->
+          <div class="space-y-6 text-lg leading-relaxed">
+            <p class="text-center text-2xl cursive text-pink-300 mb-8">
+              Làm đàn bà đi rồi đọc
+            </p>
+
+            <p class="serif">
+              Hôm nay, trong không khí tràn ngập yêu thương của ngày 20/10, tôi
+              xin gửi đến các bạn - những người phụ nữ Việt Nam - lời chúc chân
+              thành và ấm áp nhất.
+            </p>
+
+            <p class="serif">
+              Các bạn là những bông hoa kiên cường giữa bão tố, là ánh sáng dịu
+              dàng trong bóng tối, là nguồn cảm hứng bất tận cho sự sáng tạo và
+              phát triển. Sự mạnh mẽ, thông minh và nhân hậu của các bạn đã góp
+              phần tô điểm cho đất nước Việt Nam thêm rạng rỡ.
+            </p>
+
+            <div class="text-center my-8">
+              <i
+                data-feather="heart"
+                class="w-12 h-12 text-red-400 mx-auto animate-pulse"
+              ></i>
+            </div>
+
+            <p class="serif">
+              Chúc các bạn luôn xinh đẹp, hạnh phúc và thành công trong cuộc
+              sống. Mong rằng mỗi ngày trôi qua đều mang đến cho các bạn những
+              niềm vui mới, những cơ hội mới và những trải nghiệm đáng nhớ.
+            </p>
+
+            <p class="serif">
+              Hãy luôn tự hào về bản thân, về những giá trị mà các bạn mang lại
+              cho gia đình, cộng đồng và đất nước. Các bạn xứng đáng được tôn
+              vinh không chỉ trong ngày hôm nay, mà trong từng khoảnh khắc của
+              cuộc đời.
+            </p>
+
+            <p class="text-right text-xl cursive text-pink-300 mt-8">
+              Với tất cả sự ngưỡng mộ và trân trọng,
+            </p>
+            <p class="text-right text-lg text-gray-400">
+              Những người luôn dõi theo và ủng hộ bạn
+            </p>
+          </div>
+
+          <!-- Interactive Flowers -->
+          <div class="flex justify-center space-x-8 mt-12">
+            <div
+              class="text-center transform hover:scale-110 transition duration-300"
+            >
+              <i
+                data-feather="flower"
+                class="w-12 h-12 text-green-400 mx-auto"
+              ></i>
+              <p class="text-sm mt-2 text-gray-400">Sức sống</p>
+            </div>
+            <div
+              class="text-center transform hover:scale-110 transition duration-300"
+            >
+              <i
+                data-feather="star"
+                class="w-12 h-12 text-yellow-400 mx-auto"
+              ></i>
+              <p class="text-sm mt-2 text-gray-400">Tỏa sáng</p>
+            </div>
+            <div
+              class="text-center transform hover:scale-110 transition duration-300"
+            >
+              <i
+                data-feather="feather"
+                class="w-12 h-12 text-blue-400 mx-auto"
+              ></i>
+              <p class="text-sm mt-2 text-gray-400">Thanh tao</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="text-center mt-16 pb-8">
+        <p class="text-gray-500 text-sm">
+          Được tạo với ❤️ dành tặng phụ nữ Việt Nam
+        </p>
+        <div class="flex justify-center space-x-6 mt-4">
+          <a
+            href="#"
+            class="text-gray-400 hover:text-pink-400 transition duration-300"
+          >
+            <i data-feather="share-2"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-pink-400 transition duration-300"
+          >
+            <i data-feather="download"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-pink-400 transition duration-300"
+          >
+            <i data-feather="heart"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Vanta.js Background
+      VANTA.GLOBE({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xec4899,
+        backgroundColor: 0x000000,
+        size: 1.0,
+      });
+
+      // Interactive envelope
+      document
+        .querySelector(".envelope")
+        .addEventListener("click", function () {
+          this.style.transform = "scale(0.8) rotate(360deg)";
+          setTimeout(() => {
+            this.style.opacity = "0";
+            document.querySelector(".letter-content").style.display = "block";
+          }, 600);
+        });
+
+      // Petal animation
+      document.querySelectorAll(".petal").forEach((petal, index) => {
+        petal.style.animationDelay = `${index * 2}s`;
+      });
+
+      // Text animation
+      anime({
+        targets: ".glow-text",
+        opacity: [0, 1],
+        duration: 2000,
+        easing: "easeInOutQuad",
+      });
+    </script>
+    <script>
+      feather.replace();
+    </script>
+
+    <a href="index3.html" >
+          <button
+            class="text-center mt-6 px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-full transition duration-300"
+          >
+            Nhận Quà Ở Đây Này
+          </button>
+    </a>
+  </body>
+</html>

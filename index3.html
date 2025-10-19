@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video toàn màn hình</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop>
+      <source src="1.mp4" type="video/mp4" />
+      Trình duyệt của bạn không hỗ trợ thẻ video.
+    </video>
+
+    <audio id="bgmusic" loop autoplay>
+      <source src="1.mp3" type="audio/mpeg" />
+      Trình duyệt của bạn không hỗ trợ phát âm thanh.
+    </audio>
+    <script>
+      function playMusic() {
+        const audio = document.getElementById("bgmusic");
+        audio.play().catch(function (error) {
+          console.log("Không thể phát nhạc:", error);
+        });
+      }
+
+      // Tự động phát khi người dùng click bất kỳ đâu
+      document.addEventListener(
+        "click",
+        function () {
+          const audio = document.getElementById("bgmusic");
+          audio.play().catch(function (error) {
+            console.log("Không thể phát nhạc:", error);
+          });
+        },
+        { once: true }
+      );
+    </script>
+    <h1 style="color: white; text-align: center; margin-top: 40vh"></h1>
+  </body>
+</html>
